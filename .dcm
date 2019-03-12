@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export DCM_DIR="/path/to/your/dcm/dir"
+export DCM_PROJECT="bean"
+
+[ -s "$DCM_DIR/dcm.sh" ] && . "$DCM_DIR/dcm.sh"

@@ -1,0 +1,14 @@
+#!/bin/zsh
+# this script needs to be run by zsh
+
+mv ~/.zshrc ~/.zshrc.backup
+cp ~/.dotfiles/.oh-my-zsh/.zshrc ~/.zshrc
+
+# If you do not have zsh-nvm installed, then install it
+# because it will be invoked when you source the .zshrc
+if [ ! -d "~/.oh-my-zsh/custom/plugins/zsh-nvm" ]
+then
+    git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+fi
+
+source ~/.zshrc

@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+installDevelopmentDependencies () {
+    source ~/.dotfiles/.development-dependencies/.java.install
+    source ~/.dotfiles/.development-dependencies/.js.install
+    source ~/.dotfiles/.development-dependencies/.php.install
+    source ~/.dotfiles/.development-dependencies/.utilities.install
+}
+
+updateDevelopmentDependencies () {
+    source ~/.dotfiles/.development-dependencies/.brew.upgrade
+}
